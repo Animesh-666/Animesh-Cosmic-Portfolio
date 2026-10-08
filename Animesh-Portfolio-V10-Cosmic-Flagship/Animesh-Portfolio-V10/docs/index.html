@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#070d12" />
+  <meta name="description" content="Animesh Mondal — CSE student and full-stack developer building practical, thoughtful web experiences. Discover ReFeed, FOODROUTE, TeamTrack, and more." />
+  <meta property="og:title" content="Animesh Mondal • Creative Developer" />
+  <meta property="og:description" content="Full-stack development, thoughtful interfaces, and real-world projects." />
+  <meta property="og:type" content="website" />
+  <title>Animesh Mondal — Cosmic Developer Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.167.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.167.1/examples/jsm/"}}</script>
+  <script src="scene.js" defer></script>
+  <script src="galaxy.js" defer></script>
+  <script src="warp.js" defer></script>
+  <script src="app.js" defer></script>
+  <script type="module" src="three-scene.js"></script>
+</head>
+<body class="v9-galaxy" data-hero-engine="three">
+  <div class="intro-loader v10-warp" id="intro-loader" aria-hidden="true"><canvas id="warp-canvas" aria-hidden="true"></canvas><div class="intro-loader-inner"><div class="loader-orbit loader-orbit-one"></div><div class="loader-orbit loader-orbit-two"></div><div class="loader-core"></div><p>ANIMESH / COSMIC PORTFOLIO<span class="loader-dots">...</span></p><button type="button" id="warp-skip" class="warp-skip">SKIP INTRO ↗</button></div></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="galaxy-field" aria-hidden="true"></canvas><div class="ambient" aria-hidden="true"><canvas id="ambient-network"></canvas><div class="ambient-grid"></div><div class="cursor-glow" id="cursor-glow"></div></div>
+  <div class="warp-transition" id="warp-transition" aria-hidden="true"><div class="warp-tunnel"></div><div class="warp-travel-label">TRAVELLING THROUGH SPACE <span id="warp-destination">...</span></div></div>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <nav class="planet-nav" id="planet-nav" aria-label="Section orbit navigation">
+    <a href="#top" class="planet-link is-home" data-planet-target="top"><span class="planet-dot"></span><span class="planet-label">Launch</span></a>
+    <a href="#about" class="planet-link" data-planet-target="about"><span class="planet-dot"></span><span class="planet-label">About</span></a>
+    <a href="#projects" class="planet-link" data-planet-target="projects"><span class="planet-dot"></span><span class="planet-label">Projects</span></a>
+    <a href="#skills" class="planet-link" data-planet-target="skills"><span class="planet-dot"></span><span class="planet-label">Skills</span></a>
+    <a href="#activity" class="planet-link" data-planet-target="activity"><span class="planet-dot"></span><span class="planet-label">Activity</span></a>
+    <a href="#contact" class="planet-link" data-planet-target="contact"><span class="planet-dot"></span><span class="planet-label">Contact</span></a>
+    <span class="planet-nav-line" aria-hidden="true"></span>
+  </nav>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Animesh Mondal, back to top"><span class="brand-mark">A<span>M</span><i>.</i></span><span class="brand-label">ANIMESH<br>MONDAL</span></a>
+      <nav class="nav" id="main-navigation" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Expertise</a>
+        <a href="#activity">Activity</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="github-mini" href="https://github.com/Animesh-666" target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.25.77-.54v-2.1c-3.13.68-3.8-1.33-3.8-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1.01 1.73 2.64 1.23 3.29.94.1-.73.4-1.23.72-1.52-2.5-.28-5.13-1.25-5.13-5.57 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.08 1.16a10.69 10.69 0 0 1 5.6 0c2.13-1.45 3.08-1.16 3.08-1.16.61 1.55.23 2.69.11 2.98.73.79 1.16 1.79 1.16 3.02 0 4.33-2.64 5.28-5.16 5.56.41.36.78 1.06.78 2.14v3.18c0 .3.2.65.79.53A11.2 11.2 0 0 0 12 .8Z"/></svg>
+          <span>GitHub</span><span class="external-glyph">↗</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy" data-reveal>
+        <div class="eyebrow"><span class="live-dot"></span><span>CREATIVE DEVELOPER / INDIA</span><span class="eyebrow-line"></span><span class="eyebrow-index">PORTFOLIO — 2026</span></div>
+        <p class="intro-tag">HELLO, WORLD <span class="small-star">✳</span></p>
+        <h1 id="hero-title">Building ideas<br>into <span class="gradient-word">digital</span><br><span class="outline-word">experiences.</span></h1>
+        <p class="hero-description">I'm <strong>Animesh Mondal</strong>, a Computer Science student passionate about elegant interfaces, solid engineering, and software that solves real problems.</p>
+        <div class="hero-cta">
+          <a class="button button-primary" href="#projects"><span>Explore my work</span><span class="btn-arrow">↗</span></a>
+          <a class="button button-ghost" href="#contact">Let's connect <span>↗</span></a>
+        </div>
+        <div class="hero-footnote"><span class="spinning-asterisk">✳</span><span>Design with purpose.<br>Build with curiosity.</span><span class="vertical-rule"></span><span class="hero-footnote-link">SCROLL TO EXPLORE <span>↓</span></span></div>
+      </div>
+
+      <div class="hero-visual" data-reveal aria-label="Interactive premium sci-fi solar system globe scene">
+        <div class="hero-visual-grid" aria-hidden="true"></div>
+        <div class="scene-glow" aria-hidden="true"></div>
+        <div class="hero-nebula nebula-one" aria-hidden="true"></div><div class="hero-nebula nebula-two" aria-hidden="true"></div><div class="hero-nebula nebula-three" aria-hidden="true"></div>
+        <canvas id="hero-scene" aria-hidden="true"></canvas><canvas id="hero-webgl" aria-hidden="true"></canvas>
+        <div class="scene-fallback" id="scene-fallback" aria-hidden="true"><div class="fallback-orb"></div><div class="fallback-ring ring-one"></div><div class="fallback-ring ring-two"></div><div class="fallback-cross">✦</div></div>
+        <div class="orbit-label orbit-label-top"><span class="label-bullet"></span> IDEAS → IMPACT</div>
+        <div class="orbit-label orbit-label-left"><span class="orbit-label-tick">+</span> 3D / ORBITAL UI</div>
+        <div class="orbit-label orbit-label-bottom">BUILDING WHAT'S NEXT <span class="mini-flare">✦</span></div>
+        <div class="scene-corner top-left"></div><div class="scene-corner top-right"></div><div class="scene-corner bottom-left"></div><div class="scene-corner bottom-right"></div>
+        <div class="scene-control"><span class="scene-live-indicator"></span><span>LIVE / COSMIC SIMULATION</span><button id="motion-toggle" type="button" aria-pressed="false" title="Pause or resume decorative animations">Pause motion</button></div>
+        <div class="hud-panel hud-panel-left" data-float-hud><span>NODE FIELD</span><strong>Interactive 3D planet system</strong><small>Live galactic simulation</small></div>
+        <div class="hud-panel hud-panel-right" data-float-hud><span>COSMIC ENGINE</span><strong>Orbit camera + galaxy motion</strong><small>Reactive to cursor + scroll</small></div>
+        <div class="hud-panel hud-panel-bottom" data-float-hud><span>SYSTEM</span><strong>Frontend • Backend • UI</strong><small>Building useful digital systems</small></div>
+        <div class="hero-micro-hud hero-micro-hud-one" aria-hidden="true"><span>SECTOR</span><strong>SECTOR / 10</strong></div>
+        <div class="hero-micro-hud hero-micro-hud-two" aria-hidden="true"><span>PARALLAX</span><strong>CURSOR LINKED</strong></div>
+        <div class="hero-micro-hud hero-micro-hud-three" aria-hidden="true"><span>STARFIELD</span><strong>ACTIVE</strong></div>
+        <div class="hero-micro-hud hero-micro-hud-four" aria-hidden="true"><span>NAV</span><strong>PLANET HOP</strong></div>
+        <div class="travel-planets" aria-label="Travel to portfolio sections"><a href="#about" class="travel-planet travel-about" aria-label="Travel to About section"><i></i><span>ABOUT</span></a><a href="#projects" class="travel-planet travel-projects" aria-label="Travel to Projects section"><i></i><span>PROJECTS</span></a><a href="#contact" class="travel-planet travel-contact" aria-label="Travel to Contact section"><i></i><span>CONTACT</span></a></div>
+      </div>
+      <div class="hero-side-text" aria-hidden="true">01 / ORBIT. BUILD. EVOLVE.</div>
+    </section>
+
+    <div class="ticker-rail" aria-hidden="true"><div class="ticker-inner"><span>CREATIVE DEVELOPMENT</span><b>✳</b><span>REAL-WORLD SOLUTIONS</span><b>✳</b><span>FULL-STACK ENGINEERING</span><b>✳</b><span>INTERACTIVE EXPERIENCES</span><b>✳</b><span>CREATIVE DEVELOPMENT</span><b>✳</b><span>REAL-WORLD SOLUTIONS</span><b>✳</b><span>FULL-STACK ENGINEERING</span><b>✳</b></div></div>
+
+    <section class="section shell about-section" id="about" aria-labelledby="about-heading">
+      <div class="section-heading" data-reveal><span class="section-number">01 / ABOUT ME</span><h2 id="about-heading">Engineering ideas with a<br><em>builder's mindset.</em></h2><p>Curiosity drives the work. Systems thinking and interface detail make it meaningful.</p></div>
+      <div class="about-layout">
+        <div class="about-portrait tilt-card premium-profile-card" data-tilt data-reveal>
+          <div class="portrait-shine"></div><div class="portrait-grid"></div><div class="portrait-noise"></div>
+          <div class="portrait-shell">
+            <div class="portrait-chip top">PROFILE ACTIVE</div>
+            <div class="portrait-circle"><img src="assets/avatar.png" alt="Portrait of Animesh Mondal" loading="lazy"></div>
+            <div class="portrait-chip bottom">FULL-STACK / CSE</div>
+            <div class="portrait-scanline"></div>
+          </div>
+          <div class="portrait-stats">
+            <div><span>FOCUS</span><strong>Frontend + Backend</strong></div>
+            <div><span>BUILD MODE</span><strong>Real projects</strong></div>
+            <div><span>STATUS</span><strong>Open to collaboration</strong></div>
+          </div>
+          <div class="portrait-identifier"><span>AM_001</span><span>DEVELOPER PROFILE</span></div>
+          <span class="portrait-corner">✳</span>
+        </div>
+        <div class="about-copy cinematic-about" data-reveal>
+          <div class="about-copy-top">
+            <div class="about-text-block">
+              <div class="about-quote"><span class="quote-mark">“</span>I enjoy turning complex challenges into <span>simple, intuitive experiences.</span></div>
+              <p>I'm a B.Tech Computer Science &amp; Engineering student exploring the intersection of frontend design, backend systems, and problem-solving. From forecasting meals for campus canteens to building delivery routes and scheduling tools, I love working on ideas with a useful outcome.</p>
+              <p>I build with technologies such as React, JavaScript, Node.js, Express, and SQL databases, while continually expanding my engineering skills.</p>
+              <p>I'm especially interested in creating polished user experiences backed by practical engineering — products that not only look premium, but also solve real problems for real users.</p>
+            </div>
+            <div class="about-mini-visual" aria-hidden="true">
+              <canvas id="about-globe"></canvas>
+              <div class="about-mini-label top">PERSONAL ORBIT</div>
+              <div class="about-mini-label mid">TRUE 3D / GALAXY MODE</div>
+              <div class="about-mini-label bottom">FOCUS / LEARN / BUILD</div>
+            </div>
+          </div>
+          <div class="about-quickfacts"><div><span>BASE</span><strong>India</strong></div><div><span>FOCUS</span><strong>Web + Android</strong></div><div><span>MINDSET</span><strong>Learn • Build • Repeat</strong></div></div>
+          <a href="https://github.com/Animesh-666" target="_blank" rel="noopener noreferrer" class="text-link">More about me on GitHub <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
+      <div class="shell"><div class="section-heading projects-section-heading" data-reveal><span class="section-number">02 / SELECTED WORK</span><h2 id="projects-heading">Crafted with code.<br><em>Driven by purpose.</em></h2><p>Featured projects from my GitHub repositories and team collaborations.</p></div>
+      <div class="projects-grid">
+        <a class="project-card tilt-card" data-tilt data-reveal href="https://github.com/subhadipmondal99/ReFeed" target="_blank" rel="noopener noreferrer" aria-label="Open collaborative ReFeed repository on GitHub">
+          <div class="project-art art-refeed"><div class="art-grain"></div><span class="art-code">01 / CAMPUS TECH</span><div class="refeed-visual"><div class="refeed-orb">✦</div><div class="refeed-arc a1"></div><div class="refeed-arc a2"></div><div class="food-data f1"><span>FORECAST</span><strong>↗</strong></div><div class="food-data f2"><span>RESCUE</span><strong>✓</strong></div></div><div class="art-bottom">PREDICT <span>✳</span> PREPARE <span>✳</span> RESCUE</div></div>
+          <div class="project-info"><div class="project-info-heading"><div><span class="project-index">FEATURED / TEAM PROJECT</span><h3>ReFeed <span>↗</span></h3></div><span class="project-star" data-project-stars="subhadipmondal99/ReFeed">☆ —</span></div><p>Campus meal forecasting, intelligent preparation planning, and surplus-food donation coordination.</p><div class="project-tags"><span>React</span><span>Vite</span><span>Firebase</span><span>Food waste</span></div></div>
+        </a>
+        <a class="project-card tilt-card" data-tilt data-reveal href="https://github.com/Animesh-666/FOODROUTE" target="_blank" rel="noopener noreferrer" aria-label="Open FOODROUTE repository on GitHub">
+          <div class="project-art art-food"><div class="art-grain"></div><span class="art-code">02 / FULL STACK</span><div class="route-board"><div class="route-grid"></div><svg viewBox="0 0 360 180" role="presentation" aria-hidden="true"><path class="route-path-shadow" d="M35 139 C 92 139, 85 36, 162 64 S 228 159, 324 43"/><path class="route-path" d="M35 139 C 92 139, 85 36, 162 64 S 228 159, 324 43"/><circle cx="35" cy="139" r="9" fill="#ffb75b"/><circle cx="162" cy="64" r="9" fill="#ffb75b"/><circle cx="324" cy="43" r="9" fill="#ffb75b"/><circle cx="324" cy="43" r="18" fill="none" stroke="#ffb75b" opacity=".3"/></svg><div class="route-float">OPTIMIZED ROUTE <strong>↗</strong></div></div><div class="art-bottom">ROUTES <span>✳</span> DELIVERY <span>✳</span> ALGORITHMS</div></div>
+          <div class="project-info"><div class="project-info-heading"><div><span class="project-index">FEATURED / FULL STACK</span><h3>FOODROUTE <span>↗</span></h3></div><span class="project-star" data-project-stars="Animesh-666/FOODROUTE">☆ —</span></div><p>Food delivery platform featuring interactive maps, route optimization, and customer, admin, and delivery modules.</p><div class="project-tags"><span>Node.js</span><span>Express</span><span>MySQL</span><span>Algorithms</span></div></div>
+        </a>
+        <a class="project-card tilt-card" data-tilt data-reveal href="https://github.com/Animesh-666/College-Course-Scheduling-System" target="_blank" rel="noopener noreferrer" aria-label="Open College Course Scheduling repository on GitHub">
+          <div class="project-art art-schedule"><div class="art-grain"></div><span class="art-code">03 / ALGORITHMS</span><div class="calendar-visual"><div class="calendar-header">WEEKLY SCHEDULE <span>•••</span></div><div class="calendar-grid"><span></span><span class="on"></span><span></span><span class="on"></span><span></span><span class="on"></span><span class="on"></span><span></span><span></span><span class="on"></span><span></span><span class="on"></span><span></span><span></span><span class="on"></span><span class="on"></span><span></span><span class="on"></span><span class="on"></span><span></span></div><div class="calendar-tag">CONFLICT-FREE ✓</div></div><div class="art-bottom">OPTIMIZE <span>✳</span> GENERATE <span>✳</span> SCHEDULE</div></div>
+          <div class="project-info"><div class="project-info-heading"><div><span class="project-index">FEATURED / ACADEMIC PROJECT</span><h3>Course Scheduling <span>↗</span></h3></div><span class="project-star" data-project-stars="Animesh-666/College-Course-Scheduling-System">☆ —</span></div><p>Automated timetable generation using graph coloring, backtracking, and algorithm-driven conflict resolution.</p><div class="project-tags"><span>JavaScript</span><span>MySQL</span><span>Graph coloring</span></div></div>
+        </a>
+        <a class="project-card tilt-card" data-tilt data-reveal href="https://github.com/Animesh-666/teamtrack" target="_blank" rel="noopener noreferrer" aria-label="Open TeamTrack repository on GitHub">
+          <div class="project-art art-team"><div class="art-grain"></div><span class="art-code">04 / COLLABORATION</span><div class="team-visual"><div class="team-top"><span class="team-stamp">TEAMTRACK / LIVE</span><span class="team-dot"></span></div><div class="team-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="team-task"><span class="task-check">✓</span><span>Sync teams in real time</span><b>ACTIVE</b></div></div><div class="art-bottom">COORDINATE <span>✳</span> COLLABORATE <span>✳</span> BUILD</div></div>
+          <div class="project-info"><div class="project-info-heading"><div><span class="project-index">FEATURED / WEB APPLICATION</span><h3>TeamTrack <span>↗</span></h3></div><span class="project-star" data-project-stars="Animesh-666/teamtrack">☆ —</span></div><p>Team productivity dashboard built with modern web technologies and real-time Socket.IO collaboration.</p><div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Socket.IO</span></div></div>
+        </a>
+      </div><div class="projects-after" data-reveal><span>MORE PROJECTS ARE ALWAYS IN THE WORKS.</span><a class="text-link" href="https://github.com/Animesh-666?tab=repositories" target="_blank" rel="noopener noreferrer">Explore all repositories <span>↗</span></a></div></div>
+    </section>
+
+    <section class="section shell skills-section" id="skills" aria-labelledby="skills-heading">
+      <div class="section-heading" data-reveal><span class="section-number">03 / WHAT I WORK WITH</span><h2 id="skills-heading">Tools of the <em>trade.</em></h2><p>Technologies I've worked with across projects, and tools I'm continuing to explore.</p></div>
+      <div class="skills-layout" data-reveal>
+        <div class="skills-headline"><div class="skills-deco">&lt;/&gt;</div><p>Good technology is invisible.<br>Great experiences aren't.</p><span>LEARN → BUILD → IMPROVE</span></div>
+        <div class="skill-groups">
+          <div class="skill-group"><div class="skill-group-title"><span>01</span><h3>Frontend &amp; interfaces</h3></div><div class="skill-pills"><span>React</span><span>JavaScript</span><span>TypeScript</span><span>HTML / CSS</span><span>Vite</span><span>Tailwind CSS</span></div></div>
+          <div class="skill-group"><div class="skill-group-title"><span>02</span><h3>Backend &amp; data</h3></div><div class="skill-pills"><span>Node.js</span><span>Express</span><span>MySQL</span><span>MongoDB</span><span>Firebase</span><span>REST APIs</span></div></div>
+          <div class="skill-group"><div class="skill-group-title"><span>03</span><h3>Languages &amp; workflow</h3></div><div class="skill-pills"><span>Java</span><span>Kotlin</span><span>Git &amp; GitHub</span><span>VS Code</span><span>Postman</span><span>Algorithms</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section activity-section" id="activity" aria-labelledby="activity-heading">
+      <div class="shell"><div class="section-heading" data-reveal><span class="section-number">04 / BUILDING IN PUBLIC</span><h2 id="activity-heading">Progress, <em>not perfection.</em></h2><p>Public GitHub activity, pulled from my real repositories when available.</p></div>
+      <div class="activity-stats" data-reveal>
+        <div class="metric"><span>PUBLIC REPOSITORIES</span><strong data-stat="repos">—</strong><small>Github repositories</small><i>↗</i></div>
+        <div class="metric"><span>STARS RECEIVED</span><strong data-stat="stars">—</strong><small>Across public repositories</small><i>✦</i></div>
+        <div class="metric"><span>GITHUB FOLLOWERS</span><strong data-stat="followers">—</strong><small>Developer community</small><i>♡</i></div>
+        <div class="metric"><span>PUBLIC GISTS</span><strong data-stat="gists">—</strong><small>Code snippets shared</small><i>⌘</i></div>
+      </div>
+      <div class="activity-detail" data-reveal><div class="contrib-card"><div class="inner-card-top"><span><b class="green-dot"></b> CONTRIBUTION ACTIVITY</span><a href="https://github.com/Animesh-666" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></div><div class="contrib-content"><img id="contribution-image" src="https://ghchart.rshah.org/30e5ac/Animesh-666" alt="GitHub public contribution activity heatmap" loading="lazy"><p class="contrib-error" id="contrib-error" hidden>Contribution image unavailable right now. <a href="https://github.com/Animesh-666">View activity directly on GitHub ↗</a></p></div><div class="contrib-lower"><span><i class="green-dot"></i> Showing public GitHub activity</span><span>CONTRIBUTE • LEARN • GROW</span></div></div><div class="language-card"><div class="inner-card-top"><span><b class="green-dot"></b> REPOSITORY LANGUAGES</span></div><div class="language-body"><div class="donut-chart" id="language-donut"><div class="donut-center"><strong id="repo-count-center">—</strong><small>REPOS</small></div></div><div class="language-legend" id="language-legend"><p>Loading GitHub data...</p></div></div><small class="language-footnote">Distribution by repositories, not lines of code.</small></div></div>
+      <details class="pacman-panel" data-reveal>
+        <summary><span><span class="pacman-glyph">◉</span> BONUS / PAC-MAN CONTRIBUTION ANIMATION</span><span class="pacman-action">EXPAND TO PLAY THE TIMELINE <span>↘</span></span></summary>
+        <div class="pacman-inner"><picture>
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Animesh-666/Animesh-666/output-pacman/pacman-contribution-graph.svg" />
+          <img src="https://raw.githubusercontent.com/Animesh-666/Animesh-666/output-pacman/pacman-contribution-graph-dark.svg" alt="Animated Pac-Man crossing the GitHub contribution grid" loading="lazy" />
+        </picture><p>Generated from public GitHub contributions. <a href="https://github.com/Animesh-666">Open GitHub ↗</a></p></div>
+      </details>
+      <p class="activity-note" id="api-note">Statistics are fetched from GitHub's public API. If the API is unavailable, use the links to view them directly.</p></div>
+    </section>
+
+    <section class="section shell contact-section" id="contact" aria-labelledby="contact-heading"><div class="contact-panel cinematic-contact" data-reveal><div class="contact-orbit" aria-hidden="true"><span></span><span></span><span></span></div><div class="contact-content"><span class="section-number">05 / LET'S CONNECT</span><h2 id="contact-heading">Have an idea?<br><em>Let's make it real.</em></h2><p>I'm always interested in learning, collaborating, and turning useful ideas into working applications. If you have a concept, project, or team challenge, let's turn it into something elegant, useful, and memorable.</p><div class="contact-buttons"><a class="button button-primary" href="https://www.linkedin.com/in/animesh-mondal-a5059a355/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span>↗</span></a><a class="button button-ghost" href="https://github.com/Animesh-666" target="_blank" rel="noopener noreferrer">View GitHub <span>↗</span></a></div></div><div class="contact-visual" aria-hidden="true"><canvas id="contact-globe"></canvas><div class="contact-hud"><span>COLLABORATION WINDOW</span><strong>Open for ideas, projects &amp; teamwork</strong><small>Let's turn concepts into real products.</small></div></div><span class="contact-mark" aria-hidden="true">AM<span>.</span></span></div></section>
+  </main>
+  <footer class="footer shell"><a class="footer-brand" href="#top">AM<span>.</span></a><span>© <span id="year">2026</span> Animesh Mondal. Made with curiosity.</span><div class="footer-links"><a href="https://github.com/Animesh-666" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/animesh-mondal-a5059a355/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a><a href="#top">BACK TO TOP ↑</a></div></footer>
+</body>
+</html>
