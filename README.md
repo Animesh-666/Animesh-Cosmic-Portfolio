@@ -1,54 +1,89 @@
-<div align="center">
-  <img src="assets/hero.svg" alt="Animesh Mondal — full-stack developer and builder" width="100%" />
-<br />
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono\&weight=600\&size=19\&pause=1200\&color=48EAB3\&center=true\&vCenter=true\&width=790\&lines=Full-Stack+Web+Development;React+%7C+Node.js+%7C+Databases;Exploring+Android+%26+Cloud+Development;Build.+Learn.+Improve.+Repeat." alt="Animated introduction" /></a>
-<p>
-    <a href="https://github.com/Animesh-666?tab=followers"><img src="https://img.shields.io/github/followers/Animesh-666?style=for-the-badge\&label=FOLLOWERS\&logo=github\&color=0c4539\&labelColor=111c1a" alt="Followers" /></a>
-    <a href="https://github.com/Animesh-666"><img src="https://komarev.com/ghpvc/?username=Animesh-666\&label=PROFILE+VIEWS\&color=0c4539\&style=for-the-badge" alt="Profile views" /></a>
-    <a href="https://www.linkedin.com/in/animesh-mondal-a5059a355/"><img src="https://img.shields.io/badge/CONNECT-LINKEDIN-0c4539?style=for-the-badge\&logo=linkedin\&logoColor=50f6aa\&labelColor=111c1a" alt="LinkedIn" /></a>
-    <a href="https://animesh-666.github.io/Animesh-666/"><img src="https://img.shields.io/badge/PORTFOLIO-LIVE+SITE-0c4539?style=for-the-badge\&logo=githubpages\&logoColor=50f6aa\&labelColor=111c1a" alt="Portfolio website — becomes active when GitHub Pages is enabled" /></a>
-  </p>
-</div>
-✦ About me
-> \*\*CSE student · Developer · Problem solver.\*\* I enjoy building practical applications that bring together thoughtful frontend design, dependable backend systems, and useful algorithms.
-🎓 Studying Computer Science & Engineering.
-💻 Working with React, JavaScript, Node.js, Express, MySQL, and MongoDB.
-🌿 Collaborating on ReFeed, a campus food-waste management project.
-🚀 Exploring Android development, system design, and deployment.
-<img src="assets/focus.svg" width="100%" alt="Current focus: building useful software and learning" />
-◈ Featured projects
-<table>
-  <tr>
-    <td width="50%"><a href="https://github.com/subhadipmondal99/ReFeed"><img src="assets/project-refeed.svg" alt="ReFeed: team project on campus food waste reduction" width="100%" /></a></td>
-    <td width="50%"><a href="https://github.com/Animesh-666/FOODROUTE"><img src="assets/project-foodroute.svg" alt="FOODROUTE: route optimized food delivery" width="100%" /></a></td>
-  </tr>
-  <tr>
-    <td width="50%"><a href="https://github.com/Animesh-666/College-Course-Scheduling-System"><img src="assets/project-scheduling.svg" alt="College Course Scheduling project" width="100%" /></a></td>
-    <td width="50%"><a href="https://github.com/Animesh-666/teamtrack"><img src="assets/project-teamtrack.svg" alt="TeamTrack: real-time teamwork application" width="100%" /></a></td>
-  </tr>
-</table>
-<div align="center"><sub>Click any project card to explore its original GitHub repository. ReFeed is a collaborative team project.</sub></div>
-⚡ Tech stack & tools
-<div align="center">
-  <img src="assets/tech-stack.svg" alt="React, Node.js, JavaScript, TypeScript, Firebase, MySQL, Git, GitHub and Java" width="100%" />
-  <sub>Technologies I use in projects or am actively learning.</sub>
-</div>
-📊 GitHub stats & activity
-<div align="center">
-  <a href="https://github.com/Animesh-666"><img src="https://github-readme-stats.vercel.app/api?username=Animesh-666\&show\_icons=true\&hide\_border=true\&bg\_color=0d1117\&title\_color=51ebb3\&text\_color=dae7e1\&icon\_color=51ebb3" height="165" alt="GitHub stats generated from public GitHub data" /></a>
-  <a href="https://github.com/Animesh-666?tab=repositories"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Animesh-666\&layout=compact\&hide\_border=true\&bg\_color=0d1117\&title\_color=51ebb3\&text\_color=dae7e1" height="165" alt="Most-used languages across public repositories" /></a>
-</div>
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Animesh-666/Animesh-666/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution snake animation" />
-</div>
-<details>
-<summary>🎮 Bonus: Contribution Pac-Man animation</summary>
-<br />
-<img src="https://raw.githubusercontent.com/Animesh-666/Animesh-666/output-pacman/pacman-dark.svg" width="100%" alt="Pac-Man contribution graph" />
-</details>
-🤝 Connect
-<div align="center">
-  <a href="https://github.com/Animesh-666"><img src="https://img.shields.io/badge/GitHub-111d1b?style=for-the-badge\&logo=github\&logoColor=ffffff" alt="GitHub" /></a>
-  <a href="https://www.linkedin.com/in/animesh-mondal-a5059a355/"><img src="https://img.shields.io/badge/LinkedIn-111d1b?style=for-the-badge\&logo=linkedin\&logoColor=59f0b1" alt="LinkedIn" /></a>
-  <p><i>“Building useful software, one commit at a time.”</i></p>
-</div>
+# Animesh Portfolio V10 — Cosmic Flagship Edition
+
+An upgraded, responsive GitHub Pages portfolio built on the V9 design. This is the complete `docs/` static site, **not** a replacement for the README of your GitHub profile.
+
+## What's new
+
+- **Fullscreen warp intro:** 2-second star-tunnel animation, with a visible **Skip Intro** button, automatic exit, and reduced-motion handling.
+- **Planet-to-planet travel:** Click the small planets in the hero or the planetary side navigation to travel between sections with a warp transition. Drag the globe to orbit the camera when the Three.js scene has loaded.
+- **Deeper interactive HUD:** space-sector labels, glass panels, navigable planets, and controls that preserve the underlying links.
+- **Continuously moving galaxy background:** an original animated **WebGL fragment shader** with star layers, nebula noise, and subtle cursor parallax. A moving CSS + canvas background remains available if WebGL is unsupported.
+- **Real Three.js scene:** procedurally textured planet, 5 clickable smaller planets, volumetric-style atmosphere, orbit paths, comet particle trail, and starfield. The 3D scene is optional and **falls back to the existing self-contained 2D globe** when its CDN or WebGL is unavailable.
+- **Expanded About section:** extra space, 3 complete paragraphs, a separate galaxy orb, and responsive text layout with no fixed content height. Uses your existing real profile photograph.
+- **Motion controls:** Pause motion, reduced-motion preference, keyboard-accessible navigation and skip intro.
+
+## Files
+
+```
+Animesh-Portfolio-V10/
+  START_HERE.md
+  docs/
+    index.html
+    style.css
+    app.js
+    scene.js          # animated canvas fallback + About/Contact globes
+    three-scene.js    # genuine Three.js scene (loaded over HTTPS)
+    galaxy.js         # standalone WebGL galaxy shader
+    warp.js           # warp intro + click-to-travel transitions
+    .nojekyll
+    assets/
+      avatar.png
+      favicon.svg
+```
+
+## Preview locally (Windows PowerShell)
+
+Open VS Code's terminal **inside the extracted `Animesh-Portfolio-V10` folder** and run:
+
+```powershell
+py -m http.server 5500 --directory docs
+```
+
+Then visit **http://localhost:5500/**. Do not open `index.html` as a `file:///` URL; module imports are expected to run through a local web server.
+
+### Internet requirement
+
+The optional Three.js engine and OrbitControls load from **jsDelivr** (`three@0.167.1`) via an import map. These require internet access. If unavailable, the bundled, local 2D globe, starfield and page navigation still work. GitHub statistics and contribution images also require their external services. No npm setup is required for the static deployment.
+
+## Deploy to your existing GitHub Pages portfolio
+
+Your repository: https://github.com/Animesh-666/Animesh-666  
+Your Pages settings: `main` branch → `/docs`
+
+1. Open your **existing local clone** of `Animesh-666` in VS Code. Check for uncommitted work before pulling:
+
+```powershell
+git switch main
+git status
+git pull --ff-only origin main
+```
+
+2. Extract this V10 package. **Copy the contents of its `docs` folder** over the contents of your existing repository's `docs` folder. Do not replace the entire repository or the profile `README.md`. Preserve your GitHub Actions workflows.
+
+3. Confirm the files are present, then commit and push:
+
+```powershell
+git status
+git add docs
+git commit -m "Launch V10 Cosmic Flagship portfolio"
+git push origin main
+```
+
+4. Visit https://animesh-666.github.io/Animesh-666/ after Pages deploys, then hard-refresh (Ctrl + Shift + R).
+
+## How to customize
+
+- Headline, About, projects and contacts: `docs/index.html`
+- Colors, glass panels, responsive behavior: `docs/style.css`
+- Native background shader color/motion: `docs/galaxy.js`
+- Star-warp timing/navigation: `docs/warp.js`
+- Real 3D solar system/camera: `docs/three-scene.js`
+- API stats, menu, pause button: `docs/app.js`
+
+## Performance & accessibility
+
+The galaxy shader caps resolution and runs near 30–35 fps; the hero scene only animates when visible. Reduced-motion preferences and Pause motion are respected. On mobile, the smaller destination navigator is hidden and the standard menu remains available.
+
+## Testing
+
+JavaScript syntax, local-file references and browser checks for navigation, intro skip, motion pause, About text visibility, and page overflow have been run. Full CDN-backed Three.js rendering could not be tested from this offline build environment; test it from an internet-connected browser before publishing to your live site.
