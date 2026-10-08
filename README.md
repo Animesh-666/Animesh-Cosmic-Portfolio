@@ -1,6 +1,4 @@
-# Animesh Portfolio V10 — Cosmic Flagship Edition
-
-An upgraded, responsive GitHub Pages portfolio built on the V9 design. This is the complete `docs/` static site, **not** a replacement for the README of your GitHub profile.
+# Animesh Portfolio — Cosmic Edition
 
 ## What's new
 
